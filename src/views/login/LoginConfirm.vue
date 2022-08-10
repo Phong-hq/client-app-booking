@@ -13,7 +13,10 @@
         <el-form class="w-full flex"  :model="formLogin" ref="ruleFormRef" :rules="rules" @submit.prevent="loginConfirm(ruleFormRef)">
             <div class="w-full">
                 <p class="mb-3 text-36px font-bold-ct text-darkest3">Login</p>
-                <p class="text-16px font-bold-ct text-darkest3">Email or phone</p>
+                <p class="text-18px text-darkest3 font-normal my-2">Acount test:</p>
+                <p class="text-16px text-darkest3">Username: admin</p>
+                <p class="text-16px text-darkest3 mb-2">Password: 123456</p>
+                <p class="text-16px font-bold-ct text-darkest3">Username</p>
                 <!-- <p class="text-16px text-darkest3 font-normal">Please enter your ID number to login</p> -->
                 
                 <el-form-item class="w-full mt-2" prop="username">
@@ -112,7 +115,7 @@ import { $ } from 'dom7';
                         'Authorization': `Bearer ${token}`,
                         "G-ClientID":   localStorage.getItem('id'),
                         },
-                        body: JSON.stringify({ username: usernameValue,  password:  passwordValue, tenant: localStorage.getItem('id')})
+                        body: JSON.stringify({ username: usernameValue,  password:  passwordValue, tenant: 'test1'})
                         })
                     let data = await loginInfo.json();
                     token = data.result.token
@@ -160,10 +163,11 @@ import { $ } from 'dom7';
 
 <style lang="scss">
     .login-confirm{
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         .logo{
             margin-top: 40px;
+            margin-right: 0 !important;
         }
         .back-btn{
             top: 48px;

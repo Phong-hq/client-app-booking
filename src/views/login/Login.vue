@@ -1,13 +1,13 @@
 <template>
     <div class="login-id relative flex items-end">
-        <img class="bg-image w-full absolute top-0 left-0 " src="@/assets/images/login-bg-purple.png" alt="">
-        <img class="logo absolute right-2/4 translate-x-2/4" src="@/assets/images/logo-white.png" alt="">
+        <img class="bg-image w-full absolute top-0 left-0 " src="@/assets/images/login-bg-purple-2.png" alt="">
+        <img class="logo absolute right-2/4 translate-x-1/2 m-0" src="@/assets/images/logo-white.png" alt="">
         <!-- <img src="@/assets/images/login-bg-purple.png" alt=""> -->
         <el-form class="w-full flex"  :model="formLogin" ref="ruleFormRef" :rules="rules" @submit.prevent="login(ruleFormRef)">
             <div class="w-full container">
                 <p class="mb-3 text-36px font-bold-ct text-darkest3">Welcome</p>
                 <p class="text-16px font-bold-ct text-darkest3">GCI ID</p>
-                <p class="text-16px text-darkest3 font-normal">Please enter your ID number to login</p>
+                <p class="text-16px text-darkest3 font-normal">Id test: test1</p>
                 <el-form-item class="w-full mt-4 mb-2" prop="id">
                     <div class="w-full relative">
                         <el-input class="" v-model="formLogin.id" placeholder="ID" />  
@@ -124,10 +124,11 @@ import { useRouter } from "vue-router";
 
 <style lang="scss">
     .login-id{
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         .logo{
             top: 120px;
+            margin: 0 !important;
         }
         .bg-image{
             max-height: 400px;

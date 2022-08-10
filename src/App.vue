@@ -22,7 +22,9 @@ onMounted(() => {
 
 <template >
   <!-- <RouterView :style="openLoading ? 'height: 100vh' : ''"/> -->
-  <RouterView />
+  <div class="min-h-[100vh] w-[100vw] flex justify-center bg-[#cdcdcd]">
+    <RouterView class="max-w-[500px] bg-[#fff]" />
+  </div>
   <div class="loading  flex flex-center" v-if="openLoading">
     <div class="loading-box">
       <div class="lds-ellipsis">
