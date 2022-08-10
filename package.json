@@ -1,0 +1,40 @@
+{
+  "name": "gci-bussiness-client-app",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "test:unit": "vitest --environment jsdom"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "element-plus": "^2.2.2",
+    "maska": "^1.5.0",
+    "moment": "^2.29.3",
+    "pinia": "^2.0.13",
+    "swiper": "^8.1.6",
+    "v-calendar": "^3.0.0-alpha.8",
+    "v-mask": "^2.3.0",
+    "vue": "^3.2.33",
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-axios": "^3.4.1",
+    "vue-router": "^4.0.14",
+    "vue3-carousel": "^0.1.40",
+    "vue3-touch-events": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/test-utils": "^2.0.0-rc.20",
+    "autoprefixer": "^10.4.7",
+    "jsdom": "^19.0.0",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.5",
+    "vitest": "^0.9.3"
+  }
+}

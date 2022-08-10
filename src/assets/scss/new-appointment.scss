@@ -1,0 +1,68 @@
+.new-appointment{
+    .header{
+        button{
+            min-width: 100px;
+            max-width: 300px;
+            width: 48%;
+            height: 40px;
+            border-radius: 8px;
+            span{
+                font-family: fontBold;
+            }
+        }
+    }
+    .search{
+        .el-input__wrapper{
+            box-shadow: none;
+            input{
+                height: 48px;
+                width: 100%;
+                border-radius: 48px;
+                background: #F1F0F5;
+                padding-left: 3rem;
+            }
+        }
+    }
+    .service-list{
+        .el-collapse-item__arrow{
+            transform: rotate(-90deg);
+            &.is-active{
+                transform: rotate(90deg);
+            }
+        }
+        .el-collapse-item__header{
+            height: 60px;
+            background: #FFFFFF;
+            border: 1px solid #5F2EEA;
+            border-radius: 10px;
+            padding: 0 16px;
+            font-size: 16px;
+            font-family: fontBold;
+        }
+        .el-collapse-item__wrap{
+            border: none;
+        }
+        .el-collapse-item__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .item{
+                min-width: 100px;
+                max-width: 480px;
+                width: 83vw;
+                min-height: 80px;
+                background: #FFFFFF;
+                border: 1px solid #DDDDE8;
+                border-radius: 10px;
+                margin-top: 1rem;
+                &.check{
+                    border: none;                    
+                    border: 1px solid #5F2EEA;
+                    box-shadow: 3px 3px 0px rgba(94, 115, 255, 0.3);
+                }
+            }
+
+        }
+    }
+}

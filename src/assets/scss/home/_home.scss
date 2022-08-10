@@ -1,0 +1,99 @@
+.home{
+    .search{
+        .el-input__wrapper{
+            box-shadow: none;
+            input{
+                height: 48px;
+                width: 100%;
+                border-radius: 48px;
+                background: #F1F0F5;
+                padding-left: 3rem;
+            }
+        }
+    }
+    .tabs{
+        width: 190px;
+        height: 32px;
+        background: #F1F0F5;
+        border-radius: 10px;
+        .item{
+                height: 32px;
+                line-height: 28px;
+                font-family: fontSemibold;
+                font-size: 16px;
+                width: 93px;
+                height: 28px;
+                text-align: center;
+                padding: 0;
+                &.active{
+                    background: #FFFFFF;
+                    border: 1px solid #5F2EEA;
+                    color: #5F2EEA;
+                    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+                    border-radius: 6.93px;
+                }
+            }
+        .el-tabs__header{
+            margin: 0;
+        }
+        .el-tabs__nav-wrap{
+            height: 28px;
+            &::after{
+                display: none;
+            }
+            .item{
+                height: 32px;
+                line-height: 28px;
+                font-family: fontSemibold;
+                font-size: 16px;
+                width: 93px;
+                height: 28px;
+                text-align: center;
+                padding: 0;
+                &.active{
+                    background: #FFFFFF;
+                    border: 1px solid #5F2EEA;
+                    color: #5F2EEA;
+                    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+                    border-radius: 6.93px;
+                }
+            }
+            .el-tabs__active-bar{
+                display: none;
+            }
+        }
+    }
+    .fillter-status{
+        width: 130px;
+        .el-input{
+            .el-input__wrapper{
+                box-shadow: none !important;
+                input::placeholder, input{
+                    color: #2F2C35;
+                    font-size: 16px;
+                }
+                .el-icon{
+                    color: #000;
+
+                }
+            }
+            &.is-focus{
+                .el-input__wrapper{
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+    .divide{
+        height: 0.5px;
+        background: #2F2C35;
+        opacity: 0.1;
+    }
+}
+        .popper-fillter-status{
+            span{
+                font-size: 16px;
+                color: #2F2C35;
+            }
+        
+        }
