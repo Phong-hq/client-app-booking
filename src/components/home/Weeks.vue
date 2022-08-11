@@ -24,7 +24,7 @@
                 <div class="weeks" :key="weekItemKey">
                     <div class=" w-full h-full flex items-center justify-center"  v-for="(item, x) in slide.children" :key="x">
                         <div>
-                            <div class="items w-full h-full flex flex-col flex-center" :class="selectedIndexOfWeeks == x ? 'active' :''" @click="selected(item, x)">
+                            <div class="items w-full h-full flex flex-col flex-center cursor-pointer" :class="selectedIndexOfWeeks == x ? 'active' :''" @click="selected(item, x)">
                                 <div class="notify w-full h-full flex flex-col justify-center" :data-value="item.count" :class="item.count > 0 ? 'show' : ''">
                                     <div class="week-title">{{item.name}}</div>
                                     <div class="text-16px text-center" :class="x == 0 || x == 6 ? 'text-red-day' : ''">{{ moment(item.day).format('DD')}}</div>

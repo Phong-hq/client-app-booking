@@ -55,10 +55,10 @@ module.exports = {
       padding: {
         DEFAULT: '16px',
         md: '16px',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        sm: '16px',
+        lg: '16px',
+        xl: '16px',
+        '2xl': '16px',
       },
     },
     extend: {
